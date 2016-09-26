@@ -24,11 +24,21 @@ QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然�
 3. npm安装所需的包，直接在项目根目录下执行：npm install
 4. 修改protect/server.js文中_rootDir的值，表示网站根目录，如'/QuestionMaker'，默认端口为3000， 你也可以修改
 5. 启动服务器：进入protect目录，运行nodemon server.js(我本地有安装nondemon，你若没有安装，先自行安装，或者<b>直接node server.js</b>)
-6. 打开浏览器，访问<b>127.0.0.1:3000</b>，能看到如下首页，说明部署成功，如果未能成功，查看报错信息解决对应问题
+6. 打开浏览器，<b>访问127.0.0.1:3000</b>，能看到如下首页，说明部署成功，如果未能成功，查看报错信息解决对应问题
 ![](http://images.cnblogs.com/cnblogs_com/lvdabao/507840/o_QQ%e5%9b%be%e7%89%8720150907181135.png)
 
 ####gulp构建（非必须）
 该项目使用了gulp来进行资源的压缩合并，gulpfile已经编写好，只需执行gulp命令即可，编译完成后会生成一个dist目录，里面是压缩好的代码，然后在把server.js中的路径由src改为dist即可访问。
 
+
+前端的代码都在src目录下，包括入口文件index.html，这样方便我们后续做合并压缩等编译工作，编译后的文件可以一并放入dist目录下。
+## 首页index.html
+这是项目的入口页面，其实就是一个大容器，在这里加载所有的js和css文件，然后提供一个视图容器就够了，因为从这个页面以后，我们页面就不再会有跳转，全部是通过前端路由来做局部刷新，首页的代码非常精简：
+## 入口文件app.js
+有了入口页面，还得有一个js的启动入口，就是这个app.js了，在这里它只做了两件事情：
+### 启动angular，代码只有一行：
+``` javascript
+var app = angular.module('QMaker', ['ui.router']);
+``` javascript
 
 
