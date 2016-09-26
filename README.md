@@ -50,6 +50,7 @@ app.run(function($rootScope, $state, $stateParams){
     $rootScope.$state = $state;
     $rootScope.$stateParams;
 });
+```
 
 ## 控制器合集controllers.js
 controller.js里面是所有的controller定义，由于这个项目比较小，而且反正最后都要合并，所以就都放在一个文件里了，这样可以使用链式写法app.controller('a', ...).controller('b', ...)， 一口气将所有的controller都定义好。如果项目比较大，controller多，可以把controllers建为一个文件夹，然后在里面放各个controller。
