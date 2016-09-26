@@ -42,6 +42,7 @@ QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然�
 ``` javascript
 var app = angular.module('QMaker', ['ui.router']);
 
+
 我们拥有了一个名为app的全局模块。这里把ui.router给注入了，因为我们整个应用都用ui-router来做路由，后面会做详细介绍。
 ### 2.把ui-router的$state和$stateParams服务挂到$rootScope上，这样我们在后面所有的模块中，都能够访问到路由参数，不必在每个地方都注入一次了。代码也是相当简单：
 ``` javascript
