@@ -98,4 +98,4 @@ controller里面就是跟业务相关的一些代码了，如试题数据的初�
 #### 总结
 这个小项目的前端结构就是这个样子啦。从上面我们可以看出，用ng来做前端的架构还是很有条理的。controller、service、directive这些概念，本质上还是“模块”，所以我们可以以模块开发的方式来很爽快的写代码，文件与文件之间没有任何耦合和依赖。模块所需的依赖，我们通过ng的注入机制来给注入。所以在index.html中引入这些文件的时候，没有顺序要求，任意顺序引入皆可。
 顺便说一句，前端代码的后处理，我已经用gulp写好了脚本，用npm安装所需的包后，执行gulp就可以编译生成dist目录。
-本文只做angular前端架构入门级别的介绍，关于文中提到的一些具体技术细节，可以查看我写的angular系列文章<a href="http://www.cnblogs.com/lvdabao/tag/AngularJs/"></a>这个示例项目我已开源到github（<a href="https://github.com/Double-Lv/QuestionMaker">https://github.com/Double-Lv/QuestionMaker</a>），目前已经实现了基本功能。后续我会扩展更多的功能，到时候也必然会涉及到更多的技术问题，angular进行前端架构的路才刚刚开始。
+本文只做angular前端架构入门级别的介绍，关于文中提到的一些具体技术细节，可以查看我写的angular系列文章<a href="http://www.cnblogs.com/lvdabao/tag/AngularJs/">http://www.cnblogs.com/lvdabao/tag/AngularJs/</a>这个示例项目我已开源到github（<a href="https://github.com/Double-Lv/QuestionMaker">https://github.com/Double-Lv/QuestionMaker</a>），目前已经实现了基本功能。后续我会扩展更多的功能，到时候也必然会涉及到更多的技术问题，angular进行前端架构的路才刚刚开始。
