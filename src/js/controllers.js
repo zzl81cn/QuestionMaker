@@ -3,6 +3,7 @@ app
     var getList = function(pageNo, pageSize){
         QuestionService.getQuestions(pageNo, pageSize).success(function(data){
             if(data.success){
+                console.log(data);
                 $scope.questionList = data.data.questions;
                 //分页数据
                 $scope.pageObject.itemsCount = data.data.total;
