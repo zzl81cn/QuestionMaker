@@ -47,7 +47,7 @@ QuestionMaker，是一个用于生成调查问卷的系统，用户可以编辑�
 #### 前端目录结构
 用ng来构建一个项目应该如何安排目录结构呢？为了不人工增加复杂度，我这里没有用bower来管理依赖库，也没有其他文章中介绍的那样用yeoman来生成项目，只是单纯的手动来创建目录，这样可以把我们的注意力集中到项目的核心上，目录结构是这样的：
 
-https://github.com/zzl81cn/QuestionMaker/resources/dir_construction.png
+https://github.com/zzl81cn/QuestionMaker/blob/master/resources/dir_construction.png
 
 前端的代码都在src目录下，包括入口文件index.html，这样方便我们后续做合并压缩等编译工作，编译后的文件可以一并放入dist目录下。
 
