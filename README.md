@@ -8,7 +8,7 @@
 
 ####项目概述：
 QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然后把题目添加到试卷中，从而生成一份调查问卷，类似调查派。
-![demo](http://images.cnblogs.com/cnblogs_com/lvdabao/507840/o_QQ%e5%9b%be%e7%89%8720150907163253.png)
+![demo](https://github.com/zzl81cn/QuestionMaker/blob/master/resources/project_ui.png)
 
 项目的功能主要是CRUD操作，所以非常适合angular的应用场景，双向绑定对于实现实时预览这样的功能简直是信手拈来。
 
@@ -25,7 +25,7 @@ QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然�
 4. 修改protect/server.js文中_rootDir的值，表示网站根目录，如'/QuestionMaker'，默认端口为3000， 你也可以修改
 5. 启动服务器：进入protect目录，运行nodemon server.js(我本地有安装nondemon，你若没有安装，先自行安装，或者<b>直接node server.js</b>)
 6. 打开浏览器，<b>访问127.0.0.1:3000</b>，能看到如下首页，说明部署成功，如果未能成功，查看报错信息解决对应问题
-![](http://images.cnblogs.com/cnblogs_com/lvdabao/507840/o_QQ%e5%9b%be%e7%89%8720150907181135.png)
+![](https://github.com/zzl81cn/QuestionMaker/blob/master/resources/project_ui_afew.png)
 
 ####gulp构建（非必须）
 该项目使用了gulp来进行资源的压缩合并，gulpfile已经编写好，只需执行gulp命令即可，编译完成后会生成一个dist目录，里面是压缩好的代码，然后在把server.js中的路径由src改为dist即可访问。
