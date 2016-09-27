@@ -78,6 +78,7 @@ app.directive('pagenav',function(){
                 $element.html(str);
                 $scope.bindEvent();
             };
+
             $scope.bindEvent = function(){
                 $element.find('a').on('click', function(){
                 	var direction = $(this).attr('aria-label');
