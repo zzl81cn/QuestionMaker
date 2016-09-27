@@ -1,18 +1,15 @@
-(function(){
-
-
 /**
  * 基础模块公用的方法在这个service 里面
  *
  */
 angular.module('commonServerModule', ['ngResource'])
-	.factory("commonService", ["$http", "$filter", "$templateCache", "$modal", "$resource", "$alert", function($http, $filter, $templateCache, $modal, $resource, $alert) {
-		
+	.factory('commonService', ['$http', '$filter', '$templateCache', '$modal', '$resource', '$alert', function($http, $filter, $templateCache, $modal, $resource, $alert) {
+
 		Date.prototype.format = function(format) {
 			format = $filter('date')(this, format);
 			return format;
 		}
-		
+
 		var commonService = {
 			//基本调用后台的post Content-Type:为application/json
 			showAlert: function(title, connents) {
@@ -22,7 +19,7 @@ angular.module('commonServerModule', ['ngResource'])
 					show: true,
 					backdrop: "static",
 					keyboard: false,
-					template: 'app/pages/module_public/alert.tpl.html'
+					template: 'src/js/module_public/alert.tpl.html'
 				});
 			},
 
@@ -43,7 +40,7 @@ angular.module('commonServerModule', ['ngResource'])
 					show: true,
 					backdrop: "static",
 					keyboard: false,
-					template: 'app/pages/module_public/cnfirm.tpl.html'
+					template: 'src/js/module_public/cnfirm.tpl.html'
 				});
 				confirm.$scope.success = function() {
 					confirm.hide();
@@ -79,7 +76,7 @@ angular.module('commonServerModule', ['ngResource'])
 					backdrop: "static",
 					title: title,
 					content: connents,
-					template: 'app/pages/module_public/loadingAlert.tpl.html'
+					template: 'src/js/module_public/loadingAlert.tpl.html'
 				});
 				lodmodel.$scope.state = state;
 				return {
@@ -104,7 +101,5 @@ angular.module('commonServerModule', ['ngResource'])
 		};
 		return commonService;
 
-	}])
+	}]);
 
-
-})();

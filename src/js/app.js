@@ -1,6 +1,6 @@
 var app = angular.module('QMaker', [
-    'ui.router'
-    //,'mgcrea.ngStrap'
+    'ui.router',
+    'mgcrea.ngStrap'
     //,'commonServerModule'
 ]);
 /**
