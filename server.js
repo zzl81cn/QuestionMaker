@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-app.listen(3000);
+app.listen(3010);
 
 var _rootDir = __dirname;
 var protectDir = _rootDir + '/protect/';

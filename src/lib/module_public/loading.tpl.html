@@ -1,0 +1,13 @@
+ <!-- progress start --> 
+
+ <div class="progress"  ng-if="loadingState">
+ 	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+ 		<span>努力加载中，请稍候……</span>
+ 	</div>
+ </div>
+ <!-- progress end --> 
+
+ <div class="row text-center" ng-if="(!resList || resList.length == 0) && !loadingState">
+ 	<img src="images/vip-card-empty.png" alt="">
+ </div>
+
