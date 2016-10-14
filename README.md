@@ -20,7 +20,7 @@ QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然�
 1. 克隆项目代码到你的机器，如目录为E:\QuestionMaker下
 2. 运行数据库并导入demo数据
     1. 运行cmd，输入命令启动mongo服务：mongod --dbpath E:\QuestionMakerDB
-    2. 导入demo数据：在cmd中运行：<del>mongorestore -d QuestionMaker --drop E:\QuestionMaker\backup\mongodb\QuestionMaker</del> >mongorestore -h 127.0.0.1:27017 -d QuestionMaker D:\Workspaces\JavaScript\NG\QuestionMaker\backup\mongodb\QuestionMaker
+    2. 导入demo数据：在cmd中运行：<del>mongorestore -d QuestionMaker --drop E:\QuestionMaker\backup\mongodb\QuestionMaker</del> >mongorestore -h 127.0.0.1:27017 -d QuestionMaker D:\Workspaces\JavaScript\MEAN\QuestionMaker\backup\mongodb\QuestionMaker
 3. npm安装所需的包，直接在项目根目录下执行：npm install
 4. 修改protect/server.js文中_rootDir的值，表示网站根目录，如'/QuestionMaker'，默认端口为3000<b>(已改为3010)</b>， 你也可以修改
 5. 启动服务器：进入protect目录，运行nodemon server.js(我本地有安装nondemon，你若没有安装，先自行安装，或者<b>直接node server</b>.js)
