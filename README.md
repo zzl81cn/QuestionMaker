@@ -16,6 +16,13 @@ QuestionMaker可以用来编辑试题（选择题、填空题）和试卷，然�
 
 ####如何运行项目（windows环境为例）
 首先确保你机器上安装了nodejs和mongodb，如没有，先去官网下载安装。然后安装如下步骤进行;
+> mongoDB 安装
+  md "C:\mongodb"
+  md "C:\mongodb\log"
+  md "C:\mongodb\data"
+  echo logpath=C:\mongodb\log\mongo.log > "C:\mongodb\mongod.cfg"
+  echo dbpath=C:\mongodb\data >> "C:\mongodb\mongod.cfg"
+  "C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --config "C:\mongodb\mongod.cfg" --install
 
 1. 克隆项目代码到你的机器，如目录为E:\QuestionMaker下
 2. 运行数据库并导入demo数据
